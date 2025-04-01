@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WARNING: DEVICE LOCKED</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: #000;
+            color: #0f0;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+        }
+        h1 {
+            color: red;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: red;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: darkred;
+        }
+        .content p {
+            text-align: left;
+            margin: 10px 0;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: gray;
+        }
+
+        /* Animation for text */
+        @keyframes flicker {
+            0% { opacity: 0.2; }
+            50% { opacity: 1; }
+            100% { opacity: 0.2; }
+        }
+
+        /* Animation for loading effect */
+        @keyframes loading {
+            0% { width: 0%; }
+            100% { width: 100%; }
+        }
+
+        .loading-bar {
+            width: 0;
+            height: 5px;
+            background-color: #0f0;
+            margin-top: 20px;
+            animation: loading 5s linear infinite;
+        }
+
+        /* Terminal-like cursor animation */
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 20px;
+            background-color: #0f0;
+            animation: blink 0.8s step-end infinite;
+        }
+
+        @keyframes blink {
+            50% { background-color: transparent; }
+        }
+
+        pre {
+            text-align: left;
+            overflow: auto;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+    </style>
+    <script>
+        function escapePage() {
+            const content = `
+            <h1>📡 Device Hacked: Samsung Galaxy A11</h1>
+            <p>📍 Access Granted: Root Mode Enabled</p>
+            <p>🔍 Extracting System Data... <span class="cursor"></span></p>
+            <div class="loading-bar"></div>
+            <pre>
+System Information (Hacked)
+Device Codename: SM-A115F
+
+IP Address: 192.168.1.101 (Private Local Network - VPN Encrypted)
+
+Device Location:
+Latitude: 11.580020331299
+Longitude: 75.77287839496243
+Location Accuracy: 10 meters (GPS Lock: Strong)
+Nearby Landmark: 500 meters to Kochi, Kerala (Assumed)
+
+Kernel Version: 4.14.62-android10
+Bootloader Status: Unlocked
+Root Access: Detected ✅
+OEM Unlock: Enabled
+Custom Recovery: TWRP 3.5.0 Installed
+
+CPU & Performance (Hacked Mode)
+Processor: Qualcomm Snapdragon 450 (Clocked 1.8 GHz max)
+Performance: Forced Mode activated: 1.89 GHz on all cores
+Real-Time Overclock Data: Heat Level 42°C
+
+IP Address Tracking:
+ISP: Home Wi-Fi Network
+Public IP: 103.123.45.67 (Obfuscated)
+
+📷 Camera Hack
+Detected Camera Settings:
+13 MP Main Camera: AI-enhanced for exposure + saturation manipulation
+8 MP Front Camera: AI auto-enhancement feature running (No RAW capability)
+Hidden Deep Learning Algorithm: Enabled (Night Mode not active)
+
+🚨 Security Status:
+Root Status: Magisk Hide enabled (No Root Detected)
+Location Data: Collected every 60 minutes and stored to the cloud 🧐
+Hacked Location Timestamp: April 1, 2025 12:00 UTC
+Device Security Breach: High-risk activity from untrusted Wi-Fi network detected
+            </pre>
+            `;
+            document.body.innerHTML = content; // Replace the entire page content
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>WARNING: DEVICE LOCKED</h1>
+        <div class="content">
+            <p>Your operating system has been locked due to a violation of federal regulations.</p>
+            <p>This computer lock is aimed to stop unauthorized activity.</p>
+            <ul>
+                <li>Suspicious files have been detected on this system.</li>
+                <li>Unauthorized internet activity has been flagged.</li>
+            </ul>
+            <p><strong>DO NOT CLOSE THIS PAGE!</strong> If you close this page, all your files and your Instagram ID will be hacked.</p>
+        </div>
+        <a class="btn" href="#" onclick="escapePage();">Escape</a>
+        <div class="footer">This is an official security notice.</div>
+    </div>
+</body>
+</html>
